@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Nossa Página</title>
+    <link rel="stylesheet" href="styles/2.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">A Twenty One Pilots Fan Page!</span>
+
+        </h1>
+    </header>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Inicío</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">Sobre</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Produtos</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Lojas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assest/21.png" alt="..." width="200x200" />
+                    <!--<h1>A Youtbe Video here:</h1>
+                    <audio controls autoplay loop>
+                        <source src="Synthw.mp3">
+                    </audio> -->
+                    
+
+
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">Fresh Coffee</span>
+                            <span class="section-heading-lower">Worth Drinking</span>
+                        </h2>
+                        <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Visit Us Today!</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="audio-player">
+    <div class="player-header">
+      <div class="music-icon">♫</div>
+      <div class="track-info">
+        <h3>The Audio Track</h3>
+        <p>Playing Now</p>
+      </div>
+    </div>
+
+    <audio autoplay loop id="audio" preload="metadata">
+      <source src="Synthw.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+
+    <div class="progress-container">
+      <input
+        type="range"
+        id="progress"
+        value="0"
+        min="0"
+        max="100"
+        aria-label="Audio progress"
+      >
+      <div class="time-container">
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="play-btn" class="play-btn"
+        aria-label="Play audio">▶</button>
+
+      <div class="volume-control">
+        <span>🔊</span>
+        <input
+          type="range"
+          id="volume"
+          min="0"
+          max="1"
+          step="0.01"
+          value="1"
+          aria-label="Volume"
+        >
+      </div>
+
+      <select id="speed" aria-label="Playback speed">
+        <option value="0.5">0.5x</option>
+        <option value="0.75">0.75x</option>
+        <option value="1" selected>1x</option>
+        <option value="1.25">1.25x</option>
+        <option value="1.5">1.5x</option>
+        <option value="2">2x</option>
+      </select>
+    </div>
+  </div>
+  <script src="styles/script.js"></script>
+    
+</body>
+</html>
